@@ -1,0 +1,107 @@
+// buttons
+
+// btn fléche
+.header__navtop--arrow {
+	position: absolute;
+	font-size: 17px;
+	top: 17px;
+	left: 17px;
+}
+
+// button multicolor
+.btn__multicolor {
+	position: relative;
+	min-width: 186px;
+	padding: 15px 20px;
+	border: 0px;
+	border-radius: 25px;
+	background-image: linear-gradient(var(--color-pink),var(--color-purple));
+	box-shadow: 0 4px 10px 0 var(--boxshadow-25);
+	transition: 0.3s;
+	&:hover {
+		background-image: linear-gradient(var(--color-pink-c),var(--color-purple-c));
+		box-shadow: 0 4px 15px 0 var(--boxshadow-35);
+	}
+}
+.multicolor__link {
+	font-size: 16px;
+	font-weight: 500;
+	color: $color_5;
+}
+
+// button coeur
+.btn__ico {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22px;
+	height: 22px;
+	input[type="checkbox"] {
+		position: absolute;
+		visibility: hidden;
+		width: 22px;
+		height: 22px;
+		&:checked {
+			~ {
+				label {
+					.btn__Plein {
+						opacity: 1;
+						background-image: linear-gradient(var(--color-purple), var(--color-pink));
+					}
+				}
+			}
+		}
+	}
+}
+.btn__label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	cursor: pointer;
+}
+.btn__vide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22px;
+	height: 22px;
+}
+.btn__Plein {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $color_2;
+	background-clip: text;
+	background-image: linear-gradient(var(--color-purple), var(--color-pink));
+	opacity: 0;
+	transition: 0.3s ease;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+// menu checked
+#restauLink__checkbox {
+	position: absolute;
+	visibility: hidden;
+	width: 22px;
+	height: 22px;
+	&:checked {
+		~ {
+			.restauLink__check--label {
+				.restauLink__icon--CoeurPlein {
+					opacity: 1;
+					background-image: linear-gradient(var(--color-purple), var(--color-pink));
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+// importer tous les fichiers scss
+
+@import "./utils/animation";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/variables";
+
+@import "./pages/typography";
+
+@import "./components/buttons.scss";
+
+@import "./layout/footer";
+@import "./layout/general";
+@import "./layout/header";
+@import "./layout/mediaquery";
+
+@import "./pages/home";
+@import "./pages/loader";
+@import "./pages/menu";

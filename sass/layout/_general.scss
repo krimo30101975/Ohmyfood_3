@@ -1,0 +1,36 @@
+// general
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $font-family_1;
+}
+body {
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+}
+img {
+	object-fit: cover;
+}
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
+p {
+	font-size: 16px;
+}
+a {
+	color: $color_1;
+	text-decoration: none;
+}
+.checkbox-item {
+	appearance: none;
+}
+.fa-solid {
+	cursor: pointer;
+}
+section {
+	width: 100%;
+	height: auto;
+}

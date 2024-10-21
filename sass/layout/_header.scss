@@ -1,0 +1,27 @@
+// Header
+
+// header + header top
+.main__container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 375px;
+	background-color: $background-color_1;
+}
+header {
+	width: 100%;
+	height: auto;
+	z-index: 2;
+}
+.header__navtop {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 63px;
+}
+.header__navtop--logo {
+	width: 162px;
+	height: auto;
+}
