@@ -255,16 +255,17 @@ section {
             margin-left: 16px;
         }
         .fonction__group {
-            @include flexCenter;
-            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
             gap: 25px;
-            @include widthHeight;
+            width: 80%;
             .fonction__block  {
                 position: relative;
-                display: flex;
-                align-items: center;
+                @include flexCenter;
                 gap: 25px;
-                width: 100%;
+                width: 30%;
+                min-width: 260px;
                 height: 72.38px;
                 padding-left: 35px;
                 border-radius: 20px;
@@ -320,8 +321,8 @@ section {
             margin-left: 16px;
         }
         .restaurants__block {
-            @include flexCenter;
-            flex-direction: column;
+            display: flex;
+            justify-content: center;
             gap: 18px;
             width: 100%;
             height: auto;
@@ -329,7 +330,7 @@ section {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                @include widthHeight;
+                width: 100%;
                 border-radius: 15px 15px;
                 background-color: $color-white;
                 .restaurants__top{
@@ -755,7 +756,7 @@ section {
 }
  
 /* @media */
-@media (min-width: 375.01px) {
+@media screen and (min-width: 375.01px) {
 	.main__container {
 		max-width: 1440px;
 	}
@@ -768,24 +769,14 @@ section {
 	}
 	/* foction */
 	.fonction {
-		justify-content: center;
-		align-items: center;
-		width: 100%;
 		padding: 50px 0;
 	}
 	.fonction__title {
 		margin-left: 0px;
-		width: 80%;
 	}
 	.fonction__group {
-		width: 80%;
-		flex-direction: row;
-		flex-wrap: wrap;
+        @include widthHeight;
 		gap: 25px;
-	}
-	.fonction__block {
-		width: 30%;
-		min-width: 260px;
 	}
 	/* restaurants */
 	.restaurants {
@@ -796,18 +787,14 @@ section {
             left: 0px;
         }
         .restaurants__block {
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 80%;
         }
         .restaurants__link {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            max-width: 47%;
+            max-width: 40%;
             min-width: 300px;
-            height: auto;
+            gap: 50px;
         }
 	}
 	/* section menu */
