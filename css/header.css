@@ -1,0 +1,60 @@
+
+/*******************************
+            HEADER
+*******************************/
+.header {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+/**  SECTION LOGO  **/
+
+.header__navtop {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 63px;
+}
+
+/**  logo site  **/
+
+.header__navtop--logo  {
+    width: 162px;
+    height: auto;
+}
+
+/***  SECTION LOCATION  **/
+.header__navbottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-grey);
+    box-shadow: 0 4px 4px 0 inset var(--boxshadow-25),
+    0 4px 4px 0 var(--boxshadow-25);
+}
+
+/**  logo  **/
+.header__navbottom--ico {
+    font-size: 16px;
+    color: var(--color-grey-dark);
+}
+
+/**  paragraphe  **/
+.header input{
+    text-align: center;
+    width: 110px;
+    height: auto;
+    font-weight: 500;
+    background-color: var(--color-grey);
+    color: var(--color-black);
+    border: none;
+    outline: none;
+}
+.header__navbottom--infobar {
+    color: var(--color-black);
+}

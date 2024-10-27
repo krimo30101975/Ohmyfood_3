@@ -1,6 +1,33 @@
 // Home specific styles
 
 // header bottom
+.header {
+	width: 100%;
+	height: auto;
+	z-index: 2;
+	input {
+		text-align: center;
+		width: 110px;
+		height: auto;
+		font-weight: 500;
+		background-color: $background-color_3;
+		color: $color_4;
+		border: none;
+		outline: none;
+	}
+}
+.header__navtop {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 63px;
+}
+.header__navtop--logo {
+	width: 162px;
+	height: auto;
+}
 .header__navbottom {
 	display: flex;
 	justify-content: center;
@@ -14,18 +41,6 @@
 .header__navbottom--ico {
 	font-size: 16px;
 	color: $color_3;
-}
-.header {
-	input {
-		text-align: center;
-		width: 110px;
-		height: auto;
-		font-weight: 500;
-		background-color: $background-color_3;
-		color: $color_4;
-		border: none;
-		outline: none;
-	}
 }
 .header__navbottom--infobar {
 	color: $color_4;
@@ -149,12 +164,16 @@
 .restaurants__block {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	gap: 18px;
 	width: 100%;
 	height: auto;
 }
 .restaurants__link {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	width: 100%;
 	height: auto;
 	border-radius: 15px 15px;

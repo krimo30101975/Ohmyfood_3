@@ -1,0 +1,209 @@
+
+/***************************************
+****************************************
+             PAGES MENU 
+****************************************
+***************************************/
+
+
+/** PAGE RESTAURANT **/
+.restaurant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }
+
+ .restaurant .restaurant__title {
+    font-family: var(--typo_secondary);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+  }
+
+#restauLink__checkbox{
+    position: absolute;
+    visibility: hidden;
+    width: 22px;
+    height: 22px;
+}
+
+.restauLink__check--label{
+    position: absolute;
+    cursor: pointer;
+}
+
+.restauLink__icon--CoeurPlein {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(var(--color-purple), var(--color-pink));
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+#restauLink__checkbox:checked ~ .restauLink__check--label .restauLink__icon--CoeurPlein {
+    opacity: 1;
+    background-image: linear-gradient(var(--color-purple), var(--color-pink));
+}
+
+.restauLink__icon--CoeurPlein:hover {
+    opacity: 1;
+}
+
+/**  PAGES MENU  **/
+.menu__image--img {
+    position: absolute;
+    width: 100%;
+    height: 275px;
+}
+
+.content__menu {
+    position: relative;
+    top: 220px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 220px;
+    padding: 40px 26px;
+    border-radius: 40px 40px 0 0;
+    background-color: var(--color-grey-light);
+}
+
+/**  section menu  **/
+
+/* titre menu h2 */
+.menu .menu__title {
+    width: auto;
+    height: 27px;
+}
+
+.menu__title--h2 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.menu__title--h2::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-green-light);
+    height: 3px;
+    width: 40px;
+    top: 27px;
+    left: 0;
+}
+
+/* menu card */
+.menu,
+.card__menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+}
+
+.menu .menu__article {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15.04px;
+    background-color: var(--color-white);
+}
+
+.menu .menu__plate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+/* plate texte */
+.menu .plate__txt,
+.plate__title,
+.plate__complement {
+    overflow: hidden; /* empêcher le texte de sortir du conteneur */
+    white-space: nowrap; /* évite le retour à la ligne */
+    text-overflow: ellipsis; /* force le navigateur à ajouter des points de suspensions */
+}
+
+.menu .plate__txt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 0 15px 15px;
+}
+
+.menu .plate__title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu .plate__complement {
+    font-size: 15.04px;
+    font-weight: 300;
+}
+
+.menu .plate__money {
+    display: flex;
+    align-items: end;
+    gap: 16px;
+    top: 0;
+    width: auto;
+    height: 100%;
+}
+
+.menu .plate__prix {
+    font-size: 15.04px;
+    font-weight: 700;
+    padding: 15px 0 15px 15px;
+}
+
+/*******************************
+            MENU
+    label + icone + checkbox
+*******************************/
+/* label */
+.menu .menu__label {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* icone */
+.menu .plate__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0px;
+    height: 69px;
+    border-radius: 0 15.04px 15.04px 0;
+    background-color: var(--color-green-light);
+    transition: 0.3s linear;
+}
+
+.menu .plate__icon .fa-circle-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    border-radius: 50%;
+    color: var(--color-white);
+    transition: 0.3s linear;
+}
+
+
+

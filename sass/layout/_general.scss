@@ -7,7 +7,9 @@
 }
 body {
 	box-sizing: border-box;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	max-width: 100%1440px;
 	height: auto;
 }
 img {
@@ -33,4 +35,11 @@ a {
 section {
 	width: 100%;
 	height: auto;
+}
+.main__container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 1440px;
+	background-color: $background-color_1;
 }

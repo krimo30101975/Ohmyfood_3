@@ -1,0 +1,79 @@
+
+/*******************************
+    animation page loading
+*******************************/
+@keyframes rotate-forward{ /* animation ring forward */
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-backward{ /* animation ring backward */
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes flash{ /* animation texte */
+    0%{
+        background-image: linear-gradient(var(--color-pink),var(--color-purple));
+    }
+    50%{
+        background-image: linear-gradient(var(--color-pink-c),var(--color-purple-c));
+    }
+    100%{
+        background-image: linear-gradient(var(--color-pink),var(--color-purple));
+    }
+}
+@keyframes transition{ /* animation disparition loading */
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/*******************************
+    animation page loading
+    animation-timeline: view();
+    animation-range: entry -100% cover 40%;
+*******************************/
+.scroll__scaleA {
+    animation: scroll linear 0.3s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 1%;
+}
+@keyframes scroll{ /* animation disparition loading */
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+ /* scroll speed*/
+.scroll__scaleB {
+    animation: scroll linear 0.3s;
+    animation-timeline: view();
+    animation-range-start: cover -10%;
+    animation-range-end: contain 3%;
+}
+@keyframes scroll{
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

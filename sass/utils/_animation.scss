@@ -42,21 +42,8 @@
 }
 
 // animation scroll
-.scroll__scaleA {
-	animation: scroll linear 0.3s;
-	animation-timeline: view();
-	animation-range-start: cover 0%;
-	animation-range-end: contain 1%;
-}
-.scroll__scaleB {
-	animation: scroll linear 0.3s;
-	animation-timeline: view();
-	animation-range-start: cover -10%;
-	animation-range-end: contain 3%;
-}
-
 @keyframes scroll {
-    // animation scale end opacity
+// animation disparition loading
     from {
         transform: scale(0);
         opacity: 0;
@@ -66,3 +53,27 @@
         opacity: 1;
     }
 }
+// scroll speed
+@keyframes scroll {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.scroll__scaleA {
+    animation: scroll linear 0.3s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 1%;
+}
+.scroll__scaleB {
+    animation: scroll linear 0.3s;
+    animation-timeline: view();
+    animation-range-start: cover -10%;
+    animation-range-end: contain 3%;
+}
+    

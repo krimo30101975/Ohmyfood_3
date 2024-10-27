@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,23 +18,23 @@
 </head>
     <body>
         <div class="main__container">
-            <header class="menu__scroll header">
+            <header class="header">
                 <!-- LOGO SITE -->
-                <section class="scroll__scaleA header__navtop">
+                <section class="header__navtop">
                     <a href="../index.html"><i class="header__navtop--arrow fa-solid fa-arrow-left"></i></a>
                     <a class="header__navtop--link" href="../index.html"><img class="header__navtop--logo" src="../images/logo/ohmyfood.png" alt="logo du site Ohmyfood"></a>
                 </section>
             </header>
-    
-            <main class=" container__menu">
+
+            <main class="container__menu">
                 <!-- IMAGE RESTAURANT -->
-                <section class="scroll__scaleA menu__appear section__image" id="menu__image">
+                <section class="menu__appear section__image" id="menu__image">
                     <img class="menu__image--img" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurants La palette du goût">
                 </section>
                 <section class="menu__appear content__menu">
                     <!-- MENU RESTAURANT -->
-                    <section class="scroll__scaleA restaurant">
-                        <h1 class="restaurants__title">La palette du goût</h1>
+                    <section class="restaurant">
+                        <h1 class="restaurant__title">La palette du goût</h1>
                         <div class="btn__ico">
                             <input type="checkbox" id="btn__lpdg--menu" value="btn__lpdg--menu">
                             <label for="btn__lpdg--menu" class="btn__label">
@@ -43,11 +45,11 @@
                     </section>
                     <!-- SECTIONS MENU -->
                     <section class="menu" id="menu">
-                        <div class="scroll__scaleA menu__title">
+                        <div class="menu__title">
                             <h2 class="menu__title--h2">ENTRÉES</h2>
                         </div>
                         <div class="card__menu">
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" class="menu__escargots" id="menu__escargots" value="menu__escargots">
                                 <label for="menu__escargots" class="menu__label">
                                     <div class="menu__plate">
@@ -64,7 +66,7 @@
                                     </div>
                                 </label>
                             </article>
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" class="menu__foie" id="menu__foie" value="menu__foie">
                                 <label for="menu__foie" class="menu__label">
                                     <div class="menu__plate">
@@ -81,7 +83,7 @@
                                     </div>
                                 </label>
                             </article>
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" id="menu__oeuf" value="menu__oeuf">
                                 <label for="menu__oeuf" class="menu__label">
                                     <div class="menu__plate">
@@ -101,11 +103,11 @@
                         </div>
                     </section>
                     <section class="menu" id="menu">
-                        <div class="scroll__scaleA menu__title">
+                        <div class="menu__title">
                             <h2 class="menu__title--h2">Plats</h2>
                         </div>
                         <div class="card__menu">
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" class="menu__boeuf" id="menu__boeuf" value="menu__boeuf">
                                 <label for="menu__boeuf" class="menu__label">
                                     <div class="menu__plate">
@@ -122,7 +124,7 @@
                                     </div>
                                 </label>
                             </article>
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" id="menu__Parmentier" value="menu__Parmentier">
                                 <label for="menu__Parmentier" class="menu__label">
                                     <div class="menu__plate">
@@ -139,7 +141,7 @@
                                     </div>
                                 </label>
                             </article>
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" id="menu__turbot" value="menu__turbot">
                                 <label for="menu__turbot" class="menu__label">
                                     <div class="menu__plate">
@@ -159,11 +161,11 @@
                         </div>
                     </section>
                     <section class="menu" id="menu">
-                        <div class="menu__scroll menu__title">
+                        <div class="menu__title">
                             <h2 class="menu__title--h2">Desserts</h2>
                         </div>
                         <div class="card__menu">
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" class="menu__Paris-Brest" id="menu__Paris-Brest" value="menu__Paris-Brest">
                                 <label for="menu__Paris-Brest" class="menu__label">
                                     <div class="menu__plate">
@@ -180,7 +182,7 @@
                                     </div>
                                 </label>
                             </article>
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" id="menu__Macaron" value="menu__Macaron">
                                 <label for="menu__Macaron" class="menu__label">
                                     <div class="menu__plate">
@@ -197,7 +199,7 @@
                                     </div>
                                 </label>
                             </article>
-                            <article class="scroll__scaleA menu__article">
+                            <article class="menu__article">
                                 <input type="checkbox" id="menu__Mousse-chocolat" value="menu__Mousse-chocolat">
                                 <label for="menu__Mousse-chocolat" class="menu__label">
                                     <div class="menu__plate">
