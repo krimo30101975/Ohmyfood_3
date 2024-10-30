@@ -17,8 +17,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100% 1440px;
-  height: auto;
 }
 
 img {
@@ -117,7 +115,8 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 1440px;
+  width: 100%;
+  height: auto;
   background-color: #ffffff;
 }
 
@@ -194,6 +193,7 @@ section {
 .container .modeEmploi .modeEmploi__title {
   font-size: 24px;
   font-weight: 700;
+  padding: 0 20px;
 }
 .container .modeEmploi .modeEmploi__description {
   font-size: 18px;
@@ -232,6 +232,7 @@ section {
 }
 .container .fonction .fonction__title {
   width: 100%;
+  height: auto;
 }
 .container .fonction .fonction__group {
   display: flex;
@@ -245,7 +246,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  width: 98%;
+  width: 95%;
   height: 72.38px;
   left: 12px;
   padding-left: 35px;
@@ -728,7 +729,17 @@ section {
 }
 
 /* @media */
-@media (min-width: 335.01px) {
+@media (min-width: 375.01px) {
+  body {
+    max-width: 100% 1440px;
+    height: auto;
+  }
+  .main__container {
+    width: 1440px;
+  }
+  .header__navbottom {
+    box-shadow: none, none;
+  }
   .modeEmploi__title {
     font-size: 40px;
   }
@@ -737,10 +748,6 @@ section {
     width: 100%;
   }
   .fonction .fonction__title {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-  }
-  .fonction .fonction__group {
     padding-left: 12.5%;
     padding-right: 12.5%;
   }

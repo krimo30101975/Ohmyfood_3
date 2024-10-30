@@ -23,7 +23,7 @@
 }
 
 /* media quereis */
-$layout-breakpoint-small: 335.01px;
+$layout-breakpoint-small: 375.01px;
 
 /* font */
 $typo_primary: "Roboto", sans-serif;
@@ -60,8 +60,6 @@ $color-pink: #ff79da;
 body {
     box-sizing: border-box;
     @include flexCenter;
-    max-width: 100%1440px;
-    height: auto;
 }
 
 img {
@@ -155,14 +153,13 @@ section {
 .main__container {
     @include flexCenter;
     flex-direction: column;
-    width: 1440px;
+    @include widthHeight;
     background-color: $color-white;
 }
 
 /* HEADER */
 .header {
-    width: 100%;
-    height: auto;
+    @include widthHeight;
     z-index: 2;
     .header__navtop {
         position: relative;
@@ -220,6 +217,7 @@ section {
         .modeEmploi__title {
             font-size: 24px;
             font-weight: 700;
+            padding: 0 20px;
         }
         .modeEmploi__description {
             font-size: 18px;
@@ -256,7 +254,7 @@ section {
         @include widthHeight;
         padding: 50px 20px;
         .fonction__title {
-            width: 100%;
+            @include widthHeight;
         }
         .fonction__group {
             display: flex;
@@ -267,7 +265,7 @@ section {
                 position: relative;
                 @include flexCenter;
                 gap: 25px;
-                width: 98%;
+                width: 95%;
                 height: 72.38px;
                 left: 12px;
                 padding-left: 35px;
@@ -764,6 +762,16 @@ section {
  
 /* @media */
 @media (min-width: $layout-breakpoint-small) {
+    body {
+        max-width: 100%1440px;
+        height: auto;
+    }
+    .main__container {
+        width: 1440px;
+    }
+    .header__navbottom {
+        box-shadow: none, none;
+    }
     .modeEmploi__title {
         font-size: 40px;
     }
@@ -775,8 +783,6 @@ section {
                 padding-right: 12.5%;
             }
             .fonction__group {
-                padding-left: 12.5%;
-                padding-right: 12.5%;
                 .fonction__block  {
                     width: 32%;
                     max-width: 300px;
