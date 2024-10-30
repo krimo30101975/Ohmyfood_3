@@ -1,188 +1,149 @@
-// pour page menu
-.restaurant {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	.restaurant__title {
-		font-family: $font-family_2;
-		font-weight: 400;
-		font-style: italic;
-		font-size: 28px;
-	}
-}
-.menu__image--img {
-	position: absolute;
-	width: 100%;
-	height: 275px;
-}
-.content__menu {
-	position: relative;
-	top: 220px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-direction: column;
-	gap: 40px;
-	width: 100%;
-	height: auto;
-	margin-bottom: 220px;
-	padding: 40px 26px;
-	border-radius: 40px 40px 0 0;
-	background-color: $background-color_4;
-}
-.menu {
-	.menu__title {
-		width: auto;
-		height: 27px;
-	}
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	gap: 12px;
-	width: 100%;
-	height: auto;
-	.menu__article {
-		position: relative;
-		overflow: hidden;
-		border-radius: 15.04px;
-		background-color: $background-color_1;
-	}
-	.menu__plate {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-		height: auto;
-	}
-	.plate__txt {
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		display: flex;
-		flex-direction: column;
-		gap: 5px;
-		padding: 15px 0 15px 15px;
-	}
-	.plate__title {
-		font-size: 18px;
-		font-weight: 500;
-	}
-	.plate__complement {
-		font-size: 15.04px;
-		font-weight: 300;
-	}
-	.plate__money {
-		display: flex;
-		align-items: end;
-		gap: 16px;
-		top: 0;
-		width: auto;
-		height: 100%;
-	}
-	.plate__prix {
-		font-size: 15.04px;
-		font-weight: 700;
-		padding: 15px 0 15px 15px;
-	}
-	.menu__label {
-		position: absolute;
-		display: flex;
-		justify-content: space-between;
-		top: 0;
-		gap: 12px;
-		width: 100%;
-		height: 100%;
-		cursor: pointer;
-	}
-	.plate__icon {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 0px;
-		height: 69px;
-		border-radius: 0 15.04px 15.04px 0;
-		background-color: $background-color_6;
-		transition: 0.3s linear;
-		.fa-circle-check {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-size: 0px;
-			border-radius: 50%;
-			color: $color_5;
-			transition: 0.3s linear;
-		}
-	}
-	input[type="checkbox"] {
-		appearance: none;
-		position: relative;
-		width: 100%;
-		height: 65px;
-		border-radius: 15.04px;
-		cursor: pointer;
-		outline: none;
-		&:hover {
-			+ {
-				label {
-					.fa-circle-check {
-						font-size: 20px;
-						width: 59px;
-					}
-					.plate__icon {
-						font-size: 20px;
-						width: 59px;
-					}
-				}
-			}
-		}
-		&:checked {
-			+ {
-				label {
-					.fa-circle-check {
-						font-size: 20px;
-						width: 59px;
-					}
-					.plate__icon {
-						font-size: 20px;
-						width: 59px;
-					}
-				}
-			}
-		}
-	}
-}
-.card__menu {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	gap: 12px;
-	width: 100%;
-	height: auto;
-}
-.plate__title {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.plate__complement {
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+     
+/* PAGE MENU */
+
+/*  MENU */
+.menu__image {
+    position: absolute;
+    width: 100%;
+    height: 275px;
+    .menu__image--img {
+        width: 100%;
+        height: 275px;
+    }
 }
 
-// barre sous h2
-.menu__title--h2 {
-	position: relative;
-	font-size: 16px;
-	font-weight: 300;
-	&::after {
-		content: "";
-		position: absolute;
-		background-color: $background-color_6;
-		height: 3px;
-		width: 40px;
-		top: 27px;
-		left: 0;
-	}
+.content__menu {
+    position: relative;
+    top: -40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: -40px;
+    padding: 40px 26px;
+    border-radius: 40px 40px 0 0;
+    background-color: $color-grey-light;
+    .restaurant {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .restaurant__title {
+            font-family: $typo_secondary;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 28px;
+        }
+    }
+}
+
+/* section menu */
+
+/* titre menu h2 */
+.menu{
+    .menu__title {
+        width: auto;
+        height: 27px;
+        .menu__title--h2 {
+            position: relative;
+            font-size: 16px;
+            font-weight: 300;
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $color-green-light;
+                height: 3px;
+                width: 40px;
+                top: 27px;
+                left: 0;
+            }
+        }
+    }
+    .card__menu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        height: auto;
+        .menu__article {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15.04px;
+            background-color: $color-white;
+            .menu__label {
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                top: 0;
+                gap: 12px;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                .menu__plate {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: auto;
+                    .plate__txt {
+                        overflow: hidden; /* empêcher le texte de sortir du conteneur */
+                        white-space: nowrap; /* évite le retour à la ligne */
+                        text-overflow: ellipsis; /* force le navigateur à ajouter des points de suspensions */
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        padding: 15px 0 15px 15px;
+                        .plate__title {
+                            overflow: hidden; /* empêcher le texte de sortir du conteneur */
+                            white-space: nowrap; /* évite le retour à la ligne */
+                            text-overflow: ellipsis; /* force le navigateur à ajouter des points de suspensions */
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                        .plate__complement {
+                            overflow: hidden; /* empêcher le texte de sortir du conteneur */
+                            white-space: nowrap; /* évite le retour à la ligne */
+                            text-overflow: ellipsis; /* force le navigateur à ajouter des points de suspensions */
+                            font-size: 15.04px;
+                            font-weight: 300;
+                        }
+                    }
+                    .plate__money {
+                        display: flex;
+                        align-items: end;
+                        gap: 16px;
+                        top: 0;
+                        width: auto;
+                        height: 100%;
+                        .plate__prix {
+                            font-size: 15.04px;
+                            font-weight: 700;
+                            padding: 15px 0 15px 15px;
+                        }
+                        .plate__icon {
+                            @include flexCenter;
+                            width: 0px;
+                            height: 69px;
+                            border-radius: 0 15.04px 15.04px 0;
+                            background-color: $color-green-light;
+                            transition: 0.3s linear;
+                            .fa-circle-check {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 0px;
+                                border-radius: 50%;
+                                color: $color-green;
+                                transition: 0.3s linear;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

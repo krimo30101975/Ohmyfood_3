@@ -1,12 +1,13 @@
-//	VARIABLES
-$typo_primary: "Roboto", sans-serif;
-$typo_secondary: "Shrikhand", serif;
 
+/* media quereis */
+$layout-breakpoint-small: 375.01px;
+
+/* boxshadow */
 $boxshadow-1: rgba(0, 0, 0, 0.1);
 $boxshadow-15: rgba(0, 0, 0, 0.15);
 $boxshadow-25: rgba(0, 0, 0, 0.25);
 $boxshadow-35: rgba(0, 0, 0, 0.35);
-
+/* color */
 $color-black: #000000;
 $color-white: #ffffff;
 $color-grey: #EAEAEA;
