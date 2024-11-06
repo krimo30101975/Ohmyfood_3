@@ -1,9 +1,4 @@
 /* mixin */
-@mixin flexCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 @mixin widthHeight{
     width: 100%;
     height: auto;
@@ -19,4 +14,12 @@
 }
 @mixin animflash{
     animation: flash 1.5s linear infinite;
+}
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin linearGradient{
+    background-image: linear-gradient($color-purple, $color-pink);
 }

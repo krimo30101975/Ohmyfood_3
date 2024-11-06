@@ -1,16 +1,15 @@
 // importer tous les fichiers scss
+@import "base/typography";
+@import "utils/variables";
+@import "utils/mixins";
+//@import "utils/functions";
+@import "layout/general";
+@import "pages/loader";
+@import "layout/header";
+@import "pages/home";
+@import "pages/menu";
+@import "layout/footer";
+@import "components/buttons";
+@import "layout/mediaquery";
+@import "utils/animation";
 
-@import "./utils/_variables.scss";
-@import "./utils/_animation.scss";
-@import "./utils/_functions.scss";
-@import "./utils/_mixins.scss";
-
-@import "./base/_typography.scss";
-@import "./layout/_general.scss";
-@import "./layout/_mediaquery.scss";
-@import "./components/_buttons.scss";
-@import "./pages/_loader.scss";
-@import "./layout/_header.scss";
-@import "./pages/_home.scss";
-@import "./layout/_footer.scss";
-@import "./pages/_menu.scss";
